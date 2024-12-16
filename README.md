@@ -1,10 +1,25 @@
-This is a file extension hiding program that uses a code outside UTF-8 which makes the os can know the correct order of lettres (Left-to-right of Right-to-Left).
-usage:
-```
+# 🛠️ Extension Faker
+
+This program hides file extensions by using a code outside UTF-8, allowing the OS to determine the correct order of letters (Left-to-Right or Right-to-Left).
+
+## 🚀 Usage
+
+To run the program, use the following command:
+
+```sh
 go run main.go <your_file>
 ```
-you can edit the output by changing it in here (the default is ".txt"):
-```
+
+## ✨ Customization
+
+You can edit the output by changing the default extension (".txt") in the code:
+
+```go
 rtlOverride := "\u202Etxt"
 ```
-If you have any better ideas I am all ears.
+
+## 🤝 Contributions
+
+If you have any suggestions or improvements, feel free to share them. We welcome all ideas!
+
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
