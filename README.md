@@ -21,5 +21,3 @@ rtlOverride := "\u202Etxt"
 ## 🤝 Contributions
 
 If you have any suggestions or improvements, feel free to share them. We welcome all ideas!
-
-![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
