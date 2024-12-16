@@ -18,6 +18,16 @@ You can edit the output by changing the default extension (".txt") in the code:
 rtlOverride := "\u202Etxt"
 ```
 
+## 📄 Example
+
+Here is an example of how `script.sh` would be turned into `scripths.txt`:
+
+```sh
+go run main.go script.sh
+```
+
+The output will be `scripths.txt`.
+
 ## 🤝 Contributions
 
 If you have any suggestions or improvements, feel free to share them. We welcome all ideas!
