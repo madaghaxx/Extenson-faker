@@ -12,17 +12,13 @@ func main() {
 		return
 	}
 
-	// Original file name
 	originalFile := os.Args[1]
 	ext := filepath.Ext(originalFile)
 	filenameWithoutExt := originalFile[:len(originalFile)-len(ext)]
 
-	// Target file name with the Right-to-Left Override (U+202E) character
-	// This will make the file appear as "example.txt" but keeps the actual extension ".exe"
 	rtlOverride := "\u202Etxt"
 	hiddenFile := fmt.Sprintf("%s%s%s", filenameWithoutExt, rtlOverride, ext)
 
-	// Rename the file
 	err := os.Rename(originalFile, hiddenFile)
 	if err != nil {
 		fmt.Printf("Failed to rename file: %v\n", err)
