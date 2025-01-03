@@ -1,33 +1,34 @@
 # 🛠️ Extension Faker
 
-This program hides file extensions by using a code outside UTF-8, allowing the OS to determine the correct order of letters (Left-to-Right or Right-to-Left).
+Easily hide file extensions using non-UTF-8 characters, allowing your OS to determine the correct letter order (Left-to-Right or Right-to-Left).
+This project is designed to help users manage file extensions more flexibly. It is intended for educational and legitimate purposes only. Misuse of this tool for malicious activities is strictly prohibited.
+
+## ✨ Features
+
+- Hide file extensions using non-UTF-8 characters
+- Support for both Left-to-Right and Right-to-Left text directions
+- Easy to use command-line interface
+- Open source and community-driven
+
 
 ## 🚀 Usage
 
-To run the program, use the following command:
+Run the program with the following command:
 
 ```sh
-go run main.go <your_file>
-```
-
-## ✨ Customization
-
-You can edit the output by changing the default extension (".txt") in the code:
-
-```go
-rtlOverride := "\u202Etxt"
+go run main.go <your_file> <desired_extension>
 ```
 
 ## 📄 Example
 
-Here is an example of how `script.sh` would be turned into `scripths.txt`:
+Convert `script.sh` to `scripths.txt` with this command:
 
 ```sh
-go run main.go script.sh
+go run main.go script.sh txt
 ```
 
 The output will be `scripths.txt`.
 
 ## 🤝 Contributions
 
-If you have any suggestions or improvements, feel free to share them. We welcome all ideas!
+We welcome all suggestions and improvements! Feel free to share your ideas and help us make this project even better.
